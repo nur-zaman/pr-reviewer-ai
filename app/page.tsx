@@ -1,13 +1,13 @@
-import HomeClient from "@/components/HomeClient";
 import ThemeSwitcher from "@/components/ui/theme-toggle-button";
 import AnimatedI from "@/components/AnimatedI";
 import { Metadata } from "next";
+import GitHubPRAnalyzer from "@/components/GitHubPRAnalyzer";
 
 export const dynamic = "force-dynamic";
 export const maxDuration = 30;
 
 export const metadata: Metadata = {
-  title: "Custom Gemini AI",
+  title: "PR Code Reviewer AI",
 };
 
 export default function Home() {
@@ -17,15 +17,15 @@ export default function Home() {
       <div className="flex flex-col gap-6 w-full max-w-2xl items-center">
         <ThemeSwitcher />
         <div className="text-4xl sm:text-7xl font-bold text-center relative bg-clip-text mt-8">
-          <h1>Custom</h1>
+          <h1>Pull Request</h1>
           <h1>
-            Gemini A<AnimatedI />
+            Reviewer A<AnimatedI />
           </h1>
         </div>
         <h6 className="text-sm sm:text-md font-bold text-center relative bg-clip-text ">
-          Ask anything, get an answer
+          Enter your GitHub repository name and PR number below to see the
         </h6>
-        <HomeClient />
+        <GitHubPRAnalyzer />
       </div>
     </div>
   );

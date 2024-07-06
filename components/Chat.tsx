@@ -14,7 +14,7 @@ export function Chat({ output }: ChatProps) {
 
   return (
     <div className="mt-8 space-y-4">
-      <OutputCard cardTitle="AI Response" cardDescription={content} />
+      <OutputCard cardTitle="AI Review" cardDescription={content} />
     </div>
   );
 }
