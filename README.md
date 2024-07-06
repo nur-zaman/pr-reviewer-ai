@@ -4,18 +4,18 @@
 
 GitHub PR Analyzer is a web application that allows users to fetch and analyze Pull Request (PR) changes from GitHub repositories using AI. This tool streamlines the code review process by providing automated analysis of PR changes.
 
-## Features
 
-- Fetch file changes from GitHub PRs
-- Analyze PR changes using AI
-- User-friendly interface for inputting repository and PR details
-- Real-time streaming of AI analysis results
-- Error handling and loading states for improved user experience
+
 
 ## Tech Stack
 
-- Next.js 
-- TypeScript
+<p align="center">
+    <img alt="NextJs" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" height=40 width=40 />
+    <img alt="TailwindCSS" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" height=40 width=40/>
+    <img alt="ShadCn" src="https://raw.githubusercontent.com/nur-zaman/better-usis/master/docs/shadcn.png" height=40 width=40/>
+        <img alt="Gemini" src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/google-gemini-icon.png" height=40 width=40/>
+            <img alt="Vercel AI SDK" src="https://raw.githubusercontent.com/tandpfun/skill-icons/65dea6c4eaca7da319e552c09f4cf5a9a8dab2c8/icons/Vercel-Dark.svg" height=40 width=40/>
+</p>
 
 ## Prerequisites
 

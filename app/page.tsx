@@ -8,6 +8,20 @@ export const maxDuration = 30;
 
 export const metadata: Metadata = {
   title: "PR Code Reviewer AI",
+  openGraph: {
+    title: "PR Code Reviewer AI",
+    description: "AI powered pull request code reviewer",
+    type: "website",
+    url: "https://pr-reviewer-ai.vercel.app/",
+    images: [
+      {
+        url: "https://pr-reviewer-ai.vercel.app/images/opengraph.pngs",
+        alt: "PR Code Reviewer AI",
+        width: 1200,
+        height: 630,
+      },
+    ],
+  },
 };
 
 export default function Home() {
@@ -23,7 +37,8 @@ export default function Home() {
           </h1>
         </div>
         <h6 className="text-sm sm:text-md font-bold text-center relative bg-clip-text ">
-          Enter your GitHub repository name and PR number below to see the
+          Enter a Public GitHub repository name and PR number below to get
+          started.
         </h6>
         <GitHubPRAnalyzer />
       </div>
