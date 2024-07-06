@@ -32,7 +32,6 @@ export default function GitHubPRAnalyzer() {
 
   return (
     <div className="container mx-auto p-4 max-w-2xl">
-      <h1 className="text-2xl font-bold mb-4">GitHub PR Analyzer</h1>
       <PRForm
         repo={repo}
         setRepo={setRepo}
