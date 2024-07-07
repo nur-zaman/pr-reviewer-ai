@@ -24,6 +24,9 @@ const config = {
       },
     },
     extend: {
+      fontFamily: {
+        "Fira-Code": ["Fira Code", "monospace"],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

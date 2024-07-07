@@ -34,7 +34,7 @@ export default function OutputCard({
       <Container>
         <div className="p-3 w-full center">
           <div className="text-left backdrop-blur-xl">
-            <h3 className="text-lg font-bold mb-1 text-gray-900 dark:text-gray-100">
+            <h3 className="text-lg font-bold mb-1 text-gray-900 dark:text-gray-100 text-center underline">
               {cardTitle}
             </h3>
             <p className="text-gray-700 dark:text-gray-300 ">

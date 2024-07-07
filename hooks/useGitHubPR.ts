@@ -1,10 +1,10 @@
 import { useState } from "react";
-import { getPRFileChanges } from "@/actions/github";
+import { getPRFileChanges, PRChanges } from "@/actions/github";
 
 export function useGitHubPR() {
   const [repo, setRepo] = useState("");
   const [prNumber, setPRNumber] = useState("");
-  const [prChanges, setPRChanges] = useState("");
+  const [prChanges, setPRChanges] = useState<PRChanges>();
   const [isPRLoading, setIsPRLoading] = useState(false);
   const [prError, setPRError] = useState("");
 
@@ -14,7 +14,7 @@ export function useGitHubPR() {
     try {
       const changes = await getPRFileChanges(repo, parseInt(prNumber));
       if (!changes) throw new Error("No changes found.");
-      setPRChanges(JSON.stringify(changes));
+      setPRChanges(changes);
       return changes;
     } catch (error) {
       setPRError(

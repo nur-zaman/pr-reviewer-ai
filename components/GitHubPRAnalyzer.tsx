@@ -7,6 +7,7 @@ import PRForm from "@/components/PRForm";
 import AIResponse from "@/components/AIResponse";
 import ErrorDisplay from "@/components/ErrorDisplay";
 import LoadingIndicator from "@/components/LoadingIndicator";
+import PRInfoCard from "./PRInfoCard";
 
 export default function GitHubPRAnalyzer() {
   const {
@@ -32,14 +33,17 @@ export default function GitHubPRAnalyzer() {
 
   return (
     <div className="container mx-auto p-4 max-w-2xl">
-      <PRForm
-        repo={repo}
-        setRepo={setRepo}
-        prNumber={prNumber}
-        setPRNumber={setPRNumber}
-        onSubmit={handleSubmit}
-        isLoading={isPRLoading || isAILoading}
-      />
+      <div className="flex flex-col justify-center gap-4 w-full">
+        <PRForm
+          repo={repo}
+          setRepo={setRepo}
+          prNumber={prNumber}
+          setPRNumber={setPRNumber}
+          onSubmit={handleSubmit}
+          isLoading={isPRLoading || isAILoading}
+        />
+        {prChanges && <PRInfoCard prChanges={prChanges} />}
+      </div>
       {(isPRLoading || isAILoading) && <LoadingIndicator />}
       {(prError || aiError) && <ErrorDisplay error={prError || aiError} />}
       {aiResponse && <AIResponse response={aiResponse} />}

@@ -1,13 +1,13 @@
 "use server";
 
-type FileChange = {
+export type FileChange = {
   filename: string;
   status: "added" | "removed" | "modified";
   beforeContent?: string | null;
   afterContent?: string | null;
 };
 
-type PRChanges = {
+export type PRChanges = {
   repo: string;
   prNumber: number;
   files: FileChange[];

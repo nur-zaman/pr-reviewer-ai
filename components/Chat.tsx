@@ -13,7 +13,7 @@ export function Chat({ output }: ChatProps) {
   if (!output || output === "") return null;
 
   return (
-    <div className="mt-8 space-y-4">
+    <div className="mt-8 space-y-4 font-Fira-Code">
       <OutputCard cardTitle="AI Review" cardDescription={content} />
     </div>
   );
